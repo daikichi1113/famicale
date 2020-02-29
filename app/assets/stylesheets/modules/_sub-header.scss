@@ -1,0 +1,65 @@
+.sub-header {
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #ffffff;
+  font-family: 'arial';
+  font-weight: bold;
+  color: lightpink;
+  
+  &__left-box {
+    display: flex;
+    line-height: 75px;
+    &__logo {
+      padding: 0 30px;
+      font-family: "Courier";
+      font-weight: bold;
+      font-size: 20px;
+    }
+    &__games {
+        line-height: 75px;
+        padding: 0 10px;
+        font-size: 30px;
+    }
+    a:hover {
+        opacity: 0.8;
+    }
+    a {
+      text-decoration: none;
+      color: lightpink;
+    }
+  }
+
+  &__right-box {
+    display: flex;
+    line-height: 75px;
+    margin-right: 20px;
+    &__calendar {
+      padding: 10px 20px 0px 20px;
+    }
+    &__user-edit {
+      padding: 10px 20px 0px 20px;
+    }
+    &__user-image {
+      padding: 15px 20px 0px 10px;
+    }
+    a {
+      text-decoration: none;
+      color: lightpink;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    .btn {
+      font-size: 25px;
+    }
+    img {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+    }
+  }
+}

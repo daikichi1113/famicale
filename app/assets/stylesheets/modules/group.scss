@@ -1,0 +1,130 @@
+.calendar-group-form {
+  width: 980px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: lightpink;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Courier";
+  &__errors {
+    margin: 30px 0;
+    padding: 20px 40px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    text-align: center;
+  }
+  &__label {
+    display: block;
+    line-height: 50px;
+    text-align: right;
+  }
+  &__input {
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: rgb(101, 108, 116);
+  }
+  &__action-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: rgb(247, 141, 159);
+    border: 1px solid #ffffff;
+  }
+  &__field {
+    margin-top: 30px;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    &--left {
+      float: left;
+      width: 30%;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+    &--right {
+      float: right;
+      width: 70%;
+      line-height: 50px;
+    }
+  }
+  h1 {
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Courier";
+    font-weight: bold;
+  }
+  h2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Courier";
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+
+.calendar-group-user {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  color: #ffffff;
+  font-family: "Courier";
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  &__name {
+    float: left;
+  }
+  &__btn {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    &--add {
+      color: skyblue;
+    }
+    &--remove {
+      color: lightpink;
+    }
+  }
+  h1 {
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Courier";
+    font-weight: bold;
+  }
+  h2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Courier";
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}

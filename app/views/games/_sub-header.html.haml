@@ -1,0 +1,17 @@
+.sub-header
+  .sub-header__left-box
+    .sub-header__left-box__logo
+      *FamilyCalendar*GAME
+    .sub-header__left-box__games
+      = link_to games_top_path do
+        = icon('fas', 'gamepad')
+  .sub-header__right-box
+    .sub-header__right-box__calendar
+      = link_to root_path do
+        = icon('fas', 'calendar-alt', class:"right-box__calendar__icon btn")
+    .sub-header__right-box__user-edit
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'user-edit', class:"right-box__user-edit__icon btn")
+    .sub-header__right-box__user-image
+      - if user_signed_in?
+        = image_tag current_user.image

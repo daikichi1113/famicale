@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+  }
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 75px);
+}

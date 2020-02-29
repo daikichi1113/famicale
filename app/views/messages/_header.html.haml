@@ -1,0 +1,22 @@
+.header
+  .left-box
+    .left-box__logo
+      *FamilyCalendar*
+    %ul.left-box__calendar-items
+      %li.left-box__calendar-items__group-list
+        = icon('fas', 'calendar-alt')
+        リスト
+      = link_to new_group_path do
+        %li.left-box__calendar-items__group-new
+          = icon('fas', 'users')
+          NEW
+  .right-box
+    .right-box__game
+      = link_to games_top_path do
+        = icon('fas', 'gamepad', class:"right-box__game__icon btn")
+    .right-box__user-edit
+      = link_to edit_user_path(current_user) do
+        = icon('fas', 'user-edit', class:"right-box__user-edit__icon btn")
+    .right-box__user-image
+      - if user_signed_in?
+        = image_tag current_user.image

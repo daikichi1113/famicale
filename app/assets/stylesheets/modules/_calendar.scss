@@ -1,0 +1,98 @@
+.calendar {
+  height: 100%;
+  width: 70%;
+  background-color: #ffffff;
+  &__container {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: rgb(146, 146, 146);
+    font-family: 'arial';
+    font-weight: bold;
+    &__heading {
+      color: rgb(146, 146, 146);
+      font-size: 15px;
+      font-family: 'arial';
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    &__group {
+      display: flex;
+      justify-content: center;
+      line-height: 30px;
+      margin-bottom: 5px;
+      &__menber {
+        display: flex;
+        li {
+          padding: 0 10px;
+        }
+      }
+      &__edit {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: lightgray;
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+    }
+    &__main {
+      height: calc(100% - 100px);
+      overflow: scroll;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: 'arial';
+      font-weight: bold;
+    }                
+
+    html > body {
+          font-family: 'Noto Sans Japanese','Segoe UI','Verdana','Helvetica','Arial', sans-serif;
+    }
+    // .fc-left h2 {
+    //       font-weight: normal;
+    // }
+    .fc-widget-header th {
+          background-color: skyblue;
+    }
+    th.fc-day-header, th.fc-widget-header {
+          color: #ffffff;
+          // font-size: 14px;
+          // font-weight: normal;
+    }
+    // .fc-sun > span {
+    //       color: #cd384b;
+    // }
+    // .fc-sat > span {
+    //       color: #415ea6;
+    // }
+    td.fc-sun {
+          background-color: #fae6e3;
+    }
+    td.fc-sat {
+          background-color: #dceef7;
+    }
+    .fc-unthemed .fc-content, 
+    .fc-unthemed .fc-divider, 
+    .fc-unthemed .fc-list-heading td, 
+    .fc-unthemed .fc-list-view, 
+    .fc-unthemed .fc-popover, 
+    .fc-unthemed .fc-row, 
+    .fc-unthemed tbody, 
+    .fc-unthemed td, 
+    .fc-unthemed th, 
+    .fc-unthemed thead {
+          border-color: skyblue;
+    }
+
+    .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+          float: left;
+    }
+  }
+}
