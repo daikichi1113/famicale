@@ -1,6 +1,7 @@
 .messages__message{data: {message: {id: message.id}}}
   .messages__message__upper-box
-    = message.user.image
+    = image_tag "/@group_user.image"
+    -# = %message.user.name
     .messages__message__upper-box__date
       = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
   .messages__message__text
