@@ -1,0 +1,13 @@
+.calendar
+  .calendar__container
+    .calendar__container__heading
+      = @group.name
+    .calendar__container__group
+      %ul.calendar__container__group__menber
+        - @group.users.each do |user|
+          %li= user.name
+      .calendar__container__group__edit
+        = link_to edit_group_path(current_user) do
+          = icon('fas', 'users-cog', class:"calendar__group__edit__icon")
+    .calendar__container__main
+      #calendar

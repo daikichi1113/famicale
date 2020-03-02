@@ -20,3 +20,9 @@
     .right-box__user-image
       - if user_signed_in?
         = image_tag current_user.image
+
+%nav#list-navi
+  - current_user.groups.each do |group|
+    .menu
+      = link_to group_messages_path(group) do
+        = group.name

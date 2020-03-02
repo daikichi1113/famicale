@@ -8,7 +8,6 @@
     padding: 10px;
     overflow: scroll;
     &__message {
-
       width: 100%;
       background-color: rgba(255, 255, 255, 0.5);
       padding: 20px;
@@ -37,12 +36,13 @@
   }
   .form {
     height: 90px;
+    padding: 20px 10px;
     background-color: rgba(200, 237, 252, 0.8);
-    display: flex;
-    align-items: center;
     font-family: 'arial';
+    form {
+      display: flex;
+    }
     .input-box {
-      height: 30px;
       width: 80%;
       margin: 0 5%;
       font-size: 10px;
@@ -54,14 +54,14 @@
       }
     }
     .send-btn {
-      height: 30px;
-      width: 10%;
-      margin-right: 5%;
-      margin-top: 10px;
-      border-radius: 10px;
+      height: 35px;
+      width: 40px;
+      margin-right: 10px;
+      border-radius: 10%;
       color: #ffffff;
-      font-size: 20px;
-      text-align: center;
+      background-color: skyblue;
+      margin-left: 5px;
+      font-size: 30px;
     }
     .send-btn:hover {
       opacity: 0.8;
