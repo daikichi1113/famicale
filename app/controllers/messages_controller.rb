@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
   def create
     @message = @group.messages.new(message_params)
     if @message.save
-      redirect_to root_path(@group)
+      redirect_to group_messages_path(@group)
     else
       @messages = @group.messages.includes(:user)
       render :index

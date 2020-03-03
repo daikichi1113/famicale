@@ -9,30 +9,74 @@
     overflow: scroll;
     &__message {
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 20px;
-      margin-bottom: 10px;
-      color: rgb(77, 77, 77);
+      margin-bottom: 20px;
       font-family: 'arial';
-      border-radius: 20px 20px 20px 0;
-      &__upper-box {
-        display: flex;
-        font-size: 10px;
-        line-height: 30px;
-        margin-bottom: 10px;
-        img {
-          height: 30px;
-          width: 30px;
-          border-radius: 50%;
-          margin-right: 10px;
-          object-fit: cover;
+      color: rgb(77, 77, 77);
+      &__icon {
+        float: left;
+        margin-right: -90px;
+        width: 80px;
+      }
+      &__icon img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 23px;
+      }
+      &__chatting {
+        width: 100%;
+        &__date {
+          font-size: 10px;
+          margin-left: 5px;
+        }
+        &__text {
+          display: inline-block;
+          position: relative; 
+          margin: 5px 0 0 80px;
+          padding: 17px 13px;
+          border-radius: 12px;
+          background: #ffffff;
+        }
+        &__text:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 18px; 
+          left: -24px;
+          border: 12px solid transparent;
+          border-right: 12px solid #ffffff;
+        }
+        &__text p {
+          margin: 0;
+          padding: 0;
         }
       }
-      &__text {
-        font-size: 20px;
-        font-weight: bold;
-      }
     }
+      // background-color: rgba(255, 255, 255, 0.5);
+      // padding: 20px;
+      // margin-bottom: 10px;
+      // color: rgb(77, 77, 77);
+      // font-family: 'arial';
+      // border-radius: 20px 20px 20px 0;
+  //     &__upper-box {
+  //       display: flex;
+  //       font-size: 10px;
+  //       line-height: 30px;
+  //       margin-bottom: 10px;
+  //       img {
+  //         height: 30px;
+  //         width: 30px;
+  //         border-radius: 50%;
+  //         margin-right: 10px;
+  //         object-fit: cover;
+  //       }
+  //     }
+  //     &__text {
+  //       font-size: 20px;
+  //       font-weight: bold;
+  //     }
+  //   }
   }
   .form {
     height: 90px;

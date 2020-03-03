@@ -1,13 +1,6 @@
 .chat
   .messages
     = render partial: 'message', collection: @messages
-    -# .messages__message
-    -#   .messages__message__upper-box
-    -#     = image_tag "pic01.jpg"
-    -#     .messages__message__upper-box__date
-    -#       2020/2/22 14:00
-    -#   .messages__message__text
-    -#     日曜日は９時出発だっけ？
 
   .form
     = form_for [@group, @message] do |f|
