@@ -6,7 +6,5 @@ Rails.application.routes.draw do
   resources :groups, only: [:index, :new, :show, :create, :edit, :update] do
     resources :messages, only: [:index, :create]
   end
-  
-  get 'games/top'
 
 end

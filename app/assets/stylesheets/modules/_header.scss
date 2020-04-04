@@ -13,7 +13,7 @@
     line-height: 75px;
     &__logo {
       color: skyblue;
-      padding: 0 30px;
+      padding: 0 40px;
       font-family: "Courier";
       font-weight: bold;
       font-size: 20px;
@@ -42,11 +42,7 @@
   .right-box {
     display: flex;
     line-height: 75px;
-    margin-right: 20px;
-    &__game {
-      color: skyblue;
-      padding: 10px 20px 0px 20px;
-    }
+    margin-right: 40px;
     &__user-edit {
       padding: 10px 20px 0px 20px;
     }
