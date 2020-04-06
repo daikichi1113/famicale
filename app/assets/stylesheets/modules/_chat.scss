@@ -1,7 +1,7 @@
 .chat {
   height: 100%;
   width: 30%;
-  background-image: url("chat-back.png");
+  background-image: asset-url("chat-back.png");
   background-size: cover;
   .messages {
     height: calc(100% - 90px);
